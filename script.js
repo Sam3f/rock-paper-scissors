@@ -12,3 +12,25 @@ function getComputerChoice(){
     return answers[random];
 }
 console.log(getComputerChoice());
+
+
+//Create function to get human input
+function getHumanChoice(){
+    //Create a variable named input that will store the string inputted by the human
+    let input = prompt("Rock, Paper, Scissors?: ");
+    //Capitalize the first character and lowercase the rest 
+    input = input.charAt(0).toUpperCase()+input.slice(1).toLowerCase();
+    //check if the answer inputted is valid
+    if(input === "Paper"){
+        return input;
+    }
+    else if(input === "Rock"){
+        return input;
+    }
+    else if(input === "Scissors"){
+        return input;
+    }
+    else{
+        return "Enter a valid answer!"
+    }
+}
